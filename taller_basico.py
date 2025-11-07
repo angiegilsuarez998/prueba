@@ -193,16 +193,16 @@
 #     print(i)
 
 #14
-print()
-print("*" * 10, "|| Sumatoria del 1 al n ||","*"*10)
-print()
+# print()
+# print("*" * 10, "|| Sumatoria del 1 al n ||","*"*10)
+# print()
 
-n = int(input("Ingresa un número: "))
-for i in range (n): 
-    digit = i #el i es igual a 1, lo que hace es que el numero que el usuario ingrese el mismo se sume las veces del numero.
-    result = digit + (digit+1)
-    print(result)
-    i += 1
+# n = int(input("Ingresa un número: "))
+# for i in range (n): 
+#     digit = i #el i es igual a 1, lo que hace es que el numero que el usuario ingrese el mismo se sume las veces del numero.
+#     result = digit + (digit+1)
+#     print(result)
+#     i += 1
 
 
 #15
@@ -210,4 +210,16 @@ print()
 print("*" * 10, "|| Tabla de multiplicar ||","*"*10)
 print()
 
+Numero2 = float(input("ingrese el número: "))
+for numero2 in range(1, 11): #tabla de multiplicar del 1 al 10 
+    print(f"\nTabla del {numero2}")
 
+for i in range(1, 11):
+    print(f"{numero2} x {i} = {numero2 * i}")
+
+#16
+
+
+print()
+print("*" * 10, "|| contador regresivo con while ||","*"*10)
+print()
