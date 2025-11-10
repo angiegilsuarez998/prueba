@@ -217,9 +217,28 @@ for numero2 in range(1, 11): #tabla de multiplicar del 1 al 10
 for i in range(1, 11):
     print(f"{numero2} x {i} = {numero2 * i}")
 
-#16
+16
 
 
 print()
 print("*" * 10, "|| contador regresivo con while ||","*"*10)
 print()
+
+# Contador regresivo con while
+
+numero1 = int(input("Ingresa un número para iniciar el conteo regresivo: "))
+
+while numero1 >= 0:
+    print(numero1)
+    numero1 -= 1  # Resta 1 en cada iteración
+
+#numero guarda el valor inicial que el usuario ingresa.
+# El ciclo while se ejecuta mientras numero sea mayor o igual que 0.
+# En cada vuelta, se muestra el número actual y se le resta 1.
+# Cuando llega a -1, el ciclo se detiene y se imprime "¡Despegue!".
+
+
+print()
+print("*" * 10, "|| Adivina el número (usar random) ||","*"*10)
+print()
+
