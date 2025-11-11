@@ -205,40 +205,92 @@
 #     i += 1
 
 
-#15
-print()
-print("*" * 10, "|| Tabla de multiplicar ||","*"*10)
-print()
+# #15
+# print()
+# print("*" * 10, "|| Tabla de multiplicar ||","*"*10)
+# print()
 
-Numero2 = float(input("ingrese el número: "))
-for numero2 in range(1, 11): #tabla de multiplicar del 1 al 10 
-    print(f"\nTabla del {numero2}")
+# Numero2 = float(input("ingrese el número: "))
+# for numero2 in range(1, 11): #tabla de multiplicar del 1 al 10 
+#     print(f"\nTabla del {numero2}")
 
-for i in range(1, 11):
-    print(f"{numero2} x {i} = {numero2 * i}")
+# for i in range(1, 11):
+#     print(f"{numero2} x {i} = {numero2 * i}")
 
-16
+# 16
 
 
-print()
-print("*" * 10, "|| contador regresivo con while ||","*"*10)
-print()
+# print()
+# print("*" * 10, "|| contador regresivo con while ||","*"*10)
+# print()
 
-# Contador regresivo con while
+# # Contador regresivo con while
 
-numero1 = int(input("Ingresa un número para iniciar el conteo regresivo: "))
+# numero1 = int(input("Ingresa un número para iniciar el conteo regresivo: "))
 
-while numero1 >= 0:
-    print(numero1)
-    numero1 -= 1  # Resta 1 en cada iteración
+# while numero1 >= 0:
+#     print(numero1)
+#     numero1 -= 1  # Resta 1 en cada iteración
 
 #numero guarda el valor inicial que el usuario ingresa.
 # El ciclo while se ejecuta mientras numero sea mayor o igual que 0.
 # En cada vuelta, se muestra el número actual y se le resta 1.
 # Cuando llega a -1, el ciclo se detiene y se imprime "¡Despegue!".
 
+# import random #se importa la funcion random
+# print()
+# print("*" * 10, "|| Adivina el número (usar random) ||","*"*10)
+# print()
+
+
+
+# num1 = random.randint(1, 5) #se genera variabla estableciendo un rango para adivinar el numero.
+
+# while True: #se coloca la funcion while para generar un ciclo
+#     try:
+#         num2= int(input("Digite un número de 1 al 5: ")) #input para preguntar dato a usuario
+
+#         if num1 == num2: #se utiliza if para establecer el ciclo
+#             print("Adivinaste!!")
+#             break #cerrar ciclo
+#         else:
+#                 print("sigue intentando") #si no es el numero genera else.
+
+
+#     except ValueError: #se utiliza para especificar que deben ser numeros enteros en el rango
+#          print("Dato incorrecto, digita números del 1 al 5")
+
+
+        
+# print()
+# print("*" * 10, "|| Sumar hasta que el usuario escriba 0 ||","*"*10)
+# print()
+
+# number  = -1 #variable para iniciar el number en 0
+# number2 = 0 #ariable para iniciar el number en 1
+
+# while number != 0: #para inicio del ciclo
+#     try:
+
+#         number = int(input("Ingrese un número: "))
+#         number2 += number
+        
+        
+#     except ValueError:
+#         print("Error")
+
+# print(f"El total de los números sumados es: {number2}")
 
 print()
-print("*" * 10, "|| Adivina el número (usar random) ||","*"*10)
+print("*" * 10, "|| Sumar hasta que el usuario escriba 0 ||","*"*10)
+print() 
+
+fruits = ["Banano", "fresa", "uva", "pera", "mora", "papaya", ]
+print(f"Fruits: {fruits}")
 print()
+
+
+
+
+
 
