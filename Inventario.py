@@ -1,3 +1,4 @@
+
 #solitud del producto input()
 
 Name = input("Ingrese nombre del producto: ")
@@ -27,14 +28,14 @@ while True:
 
 total_cost = price*quality
 
-print(f"El resulto de tu compra es: {total_cost}")
+print(f"El costo total es: {total_cost}")
 
 #la f es para poder colocar variable y un string al mismo tiempo. habilita utiliza {} para colocar las variables e imprimir
 
 print(f"Producto {Name} | Precio Unitario {price} | Cantidad {quality} | Costo total {total_cost}")
 
 
-#el programa ayuda a hacer una base de datos para inventrio solicitando datos precisos y
+#el programa ayuda a hacer una base de datos para inventrio solicitando datos precisos
 
 
 

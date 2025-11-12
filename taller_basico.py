@@ -287,10 +287,29 @@ print()
 
 fruits = ["Banano", "fresa", "uva", "pera", "mora", "papaya", ]
 print(f"Fruits: {fruits}")
+
+
 print()
+print("*" * 10, "|| Agregar y eliminar frutas ||","*"*10)
+print() 
 
 
+#Pedir al usuario una fruta para agregar
+new_fruit = input("\nIngresa el nombre de una fruta para agregar: ")
+fruits.append(new_fruit)
+print(f"Después de agregar {new_fruit}: {fruits}")
 
+#Pedir al usuario una fruta para eliminar
+remove_fruit = input("\nIngresa el nombre de una fruta para eliminar: ")
 
+#Validar si la fruta está en la lista antes de eliminarla
+if remove_fruit in fruits:
+    fruits.remove(remove_fruit)
+    print(f"{remove_fruit} ha sido eliminada. Lista actual: {fruits}")
+else:
+    print(f"La fruta {remove_fruit} no está en la lista.")
+
+#Mostrar la lista final
+print(f"Lista final de frutas: {fruits}")
 
 

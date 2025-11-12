@@ -102,6 +102,7 @@
 # lista = [(1, 'uno'), (3, 'tres'), (2, 'dos')]
 # lista_ordenada = sorted(lista, key=lambda item: item[0])
 # print(lista_ordenada)  # Salida: [(1, 'uno'), (2, 'dos'), (3, 'tres')]
+ #lambda Función anónima en Python que se define sin usar el def, y se utiliza para escribir pequeñas funciones en una sola línea.
 
 
 #LISTAS
@@ -130,11 +131,74 @@
 # print(frutas)
 
 
-Numbers = ["1", "4", "2", "3", "5", "7", "6", "8"]
-Numbers.sort() #metodo para organizar numeros
-print(Numbers)
+# Numbers = ["1", "4", "2", "3", "5", "7", "6", "8"]
+# Numbers.sort() #metodo para organizar numeros
+# print(Numbers)
 
 
+#funcion lambda
+# Una función lambda en Python es una función anónima, es decir, una función que no tiene nombre y que se usa normalmente para realizar operaciones simples y rápidas.
+# Se define con la palabra clave lambda.
+# Ejemplo 1: Función que suma dos números
+# Con def (función normal):
+# def sumar(a, b):
+#     return a + b
+
+# print(sumar(5, 3))  # Salida: 8
+
+# Con lambda (función anónima):
+# sumar = lambda a, b: a + b
+# print(sumar(5, 3))  # Salida: 8
+
+#diccionario
+# colecciones de pares clave-valor que permiten almacenar y 
+# acceder a datos de manera eficiente usando una clave única. 
+# Se crean con llaves {} y cada par clave-valor se separa con dos puntos :,
+# mientras que los pares se separan con comas. Las claves deben ser inmutables 
+# (como cadenas o tuplas), mientras que los valores pueden ser de cualquier tipo de dato. 
+# mi_diccionario = {
+#       'nombre': 'Ana',
+#       'edad': 30,
+#       'ciudad': 'Madrid'
+#     }
+
+# # Acceso a los valores
+# # Se accede a los valores utilizando la clave correspondiente entre corchetes. 
+
+# print(mi_diccionario['nombre']) # Salida: Ana
+
+# # También puedes acceder a elementos anidados, como en el 
+# # siguiente ejemplo donde se accede a un elemento de una lista dentro del diccionario: 
+
+# datos = {
+#   'lenguajes': ['Python', 'Ruby'],
+#   ' Tabs or Spaces': 'Tabs'
+# }
+# print(datos['lenguajes'][0]) # Salida: Python
+
+#crear diccionarios con listas y que el usuario pueda agregar los datos
+
+coders = [] 
+print(coders)
+
+amaount = int(input("Cuantos users va a agregar: "))
+
+while amaount != 0 : #se utiliza el while para la variabla amaount para que vuelva a iniciar el ciclo y volver a ingresar los datos del otro coder.
+    name = input("Ingresa el nombre: ")
+    lastName = input("Ingresa el apellido: ")
+    age = input("Ingresa el edad: ")
+    email = input("Ingresa el correo: ")
+
+    coder = { #se habre el diccionario se colocan las variables la cuales el usuario registra
+        "nombre": name,
+        "apellido": lastName,
+        "edad": age,
+        "correo": email
+    }
+    amaount -=1 #se coloca para que el ciclo while deje de preguntar despues que el usuario ingrese los datos de todos los coders que dijo que iba a ingresar inicialmente.
+    coders.append(coder) #se utiliza para agregar un elemento final a la lista
+    print(f"te faltan {amaount} usuario por ingresar") #se coloca print para que cada vez que ingrese un usuario salga las veces que le reste.
 
 
+print(coders)
 
