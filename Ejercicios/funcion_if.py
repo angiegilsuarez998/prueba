@@ -176,29 +176,29 @@
 # }
 # print(datos['lenguajes'][0]) # Salida: Python
 
-#crear diccionarios con listas y que el usuario pueda agregar los datos
+# # crear diccionarios con listas y que el usuario pueda agregar los datos
 
-coders = [] 
-print(coders)
+# coders = [] 
+# print(coders)
 
-amaount = int(input("Cuantos users va a agregar: "))
+# amaount = int(input("Cuantos users va a agregar: "))
 
-while amaount != 0 : #se utiliza el while para la variabla amaount para que vuelva a iniciar el ciclo y volver a ingresar los datos del otro coder.
-    name = input("Ingresa el nombre: ")
-    lastName = input("Ingresa el apellido: ")
-    age = input("Ingresa el edad: ")
-    email = input("Ingresa el correo: ")
+# while amaount != 0 : #se utiliza el while para la variabla amaount para que vuelva a iniciar el ciclo y volver a ingresar los datos del otro coder.
+#     name = input("Ingresa el nombre: ")
+#     lastName = input("Ingresa el apellido: ")
+#     age = input("Ingresa el edad: ")
+#     email = input("Ingresa el correo: ")
 
-    coder = { #se habre el diccionario se colocan las variables la cuales el usuario registra
-        "nombre": name,
-        "apellido": lastName,
-        "edad": age,
-        "correo": email
-    }
-    amaount -=1 #se coloca para que el ciclo while deje de preguntar despues que el usuario ingrese los datos de todos los coders que dijo que iba a ingresar inicialmente.
-    coders.append(coder) #se utiliza para agregar un elemento final a la lista
-    print(f"te faltan {amaount} usuario por ingresar") #se coloca print para que cada vez que ingrese un usuario salga las veces que le reste.
+#     coder = { #se habre el diccionario se colocan las variables la cuales el usuario registra
+#         "nombre": name,
+#         "apellido": lastName,
+#         "edad": age,
+#         "correo": email
+#     }
+#     amaount -=1 #se coloca para que el ciclo while deje de preguntar despues que el usuario ingrese los datos de todos los coders que dijo que iba a ingresar inicialmente.
+#     coders.append(coder) #se utiliza para agregar un elemento final a la lista
+#     print(f"te faltan {amaount} usuario por ingresar") #se coloca print para que cada vez que ingrese un usuario salga las veces que le reste.
 
 
-print(coders)
+# print(coders)
 
